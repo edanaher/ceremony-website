@@ -771,7 +771,7 @@
 	#header
 	{
 		position: relative;
-		background: url(../images/header.jpg) no-repeat bottom center;
+		background: url(../images/toby-stick-cropped.jpg) no-repeat bottom center;
 		background-attachment: fixed;
 		background-size: cover;
 		text-align: center;
@@ -817,7 +817,7 @@
 		
 		#logo span
 		{
-			font-size: 1.4em;
+			font-size: 2.2em;
 			color: #FFF;
 		}
 
