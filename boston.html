@@ -17,78 +17,19 @@ layout: default
 							<span class="byline">What to do while you're in town</span>
 						</header>
 						<p>You may just be in Boston for a couple days, but we've lived here for a couple years (and Kelly grew up here).  So here are some of our suggestions for things to do if you have some free time while you're in town.  Unfortunately, some are in pseudo-latin.</p>
-						<h2><a name="North_End">North End</a></h2>
-						<h4>Museum of Science</h4>
-						<p> Technically it's not in the North End, but that is what it is closest too.  This is probably Boston's best museum, and if you hit one this weekend, I'd hit this one.</p>
-						<h4><a href="http://www.neptuneoyster.com/">Neptune Oyster</a></h4>
-						<p>Yes, the North End is known for its okay Italian Food, but Neptune Oyster is one of Kelly's favorite seafood restaurants in Boston. It's on the very pricey side. Lots of oysters, lot of fish, and some lobster rolls.  There are no reservations.  If you want to eat here for lunch on Saturday/Sunday in September at 11 am when they open, get here at 10 am for guarenteed seating.  The menu is exactly the same for lunch and dinner.</p>
-						<h4><a href="http://www.ward8.com/">Ward 8</a></h4>
-						<p>On the Garden side of the North End.  Great for Mixed Drinks and Maple Chili Duck Wings (no really, order them if you are here, sometimes I even order two).</p>
-						<h4><a href="https://www.thefreedomtrail.org/">Freedom Trail</a></h4>
-						<p>Want to see some of the historical sites of Boston, start here as it's a good overview of all the Revolutionary War stuff in Boston proper.  You can either use the website to see it on your own, or there are tours (some tour guides are more snarky then others).</p>
-						
-						<h2><a name="FH_FD">Fanuiel Hall/Financial District</a></h2>
-						<h4>Aquarium</h4>
-						<p> It's free to see the Harbor Seals outside the aquarium.  Inside the aquarium you can look at penguins, fishes, or most importantly, the fur seals and sea lions</p>
+            {% for place in site.places %}
+              {% if place.area %}
+                <h2><a name="{{ place.link }}">{{ place.area }}</a></h2>
+              {% else %}
+                <h4>{% if place.link %}<a href="{{ place.link }}">{% endif %}
+                    {{ place.place }}
+                    {% if place.link %}</a>{% endif %}
+                </h4>
+                {{ place.content }}
+              {% endif %}
+            {% endfor %}
 
-						<h4>Union Oyster House Tavern</a></h4>
-						<p>Yes it is history, but avoid here at all costs. Great Boston Globe Review <a href="https://www.bostonglobe.com/lifestyle/food-dining/2016/02/29/tourist-trap-living-history-review-union-oyster-house/Xru3c9Q7LmKAZKsCD9NLXJ/story.html">here</a></p>
-						<h4><a href="https://www.thefreedomtrail.org/">Fanuiel Hall/Quincy Market</a></h4>
-						<p>Historically important, but it's now just a mall.</p>
-						<h4><a href="https://bostonpublicmarket.org/">Boston Public Market</a></h4>
-						<p>Where Kelly gets a lot of the seafood, meat, and veggies we eat.  Lots of quicker local dining options (Kelly enjoys Naella Pasta, most people love Bon Me). Definitely check out Union Square Donuts if you go.</p>
-						<h4>Durty Nelly's</h4>
-						<p>Closest thing to a dive bar in the Fanuiel area, nice bartenders, interesting regulars, one of Kelly's regular haunts (you can always ask the bartender for dominos to play while drinking if it's not too busy).  Also one of the few bars in Boston that lets you bring in your own food.</p>
-
-						<h2><a name="DohntahnCrossing">Downtown Crossing</a></h2>
-						<h4>Sam LaGrassa's</h4>
-						<p>If you are going to get a Sandwich in Boston, this is where you get a Sandwich in Boston.</p>
-						<h4><a href="http://yvonnesboston.com/">Yvonne's</a></h4>
-						<p>Interesting "speakeasy." The drinks are great, a lot of people rave about the food, but we haven't found it that great.  That might be because we never go in a large enough group to get some of the huge shared plates.</p>
-						<h4>Stoddard's</h4>
-						<p>Great mixed drinks, okay food, awful service.</p>
-						<h4>jm curley's</h4>
-						<p> One of the better Burgers on the Boston side of the Charles, good beer list, and always a good time.</p>
-						<h4>Falafel King</h4>
-						<p>What Kelly believes is actually the best of the Shawarma places in this area (there are like 12 different ones).</p>
-
-						<h2><a name ="Chinatown">Chinatown/Theater District/Leather District</a></h2>
-						<h4>Townsman</h4>
-						<p></p>
-						<h4>Troquet on South</h4>
-						<p>Expensive food, expansive and amazing wine by the glass list.</p>
-
-						<h2><a name="BackBay">Back Bay/Copley</a></h2>
-						<h4>Boston Common</h4>
-						<p>Want to ride a Swan boat while you are in Boston, this is where you ride a swan boat in Boston. Also if the Governor is on the Common, he can still give you permission to have a duel on the Common.</p>
-						<h4>Newbury Street/The Pru(dential)/Copley Place</h4>
-						<p>Boston's premier shopping area, all the upscale stores with less sales tax then California or NYC.  On Newbury Street, the closer to the Garden one is the more expensive the store is.</p>
-						<h4>Parish Cafe</h4>
-						<p></p>
-						<h4>Chili Duck</h4>
-						<p>Pretty good Americanized Thai Food.</p>
-						
-						<h2><a name="SouthEnd">South End</a></h2>
-
-						<h2><a name="Kenmore">Kenmore</a></h2>
-						<h4>Fenway</h4>
-						<p>Best Baseball park in the US bar none.  See the Green Monster for yourself.  Catch a game on Sunday, it's worth it.  Also Yankees Suck!</p>
-
-						<h4>Eastern Standard/The Hawthorne</h4>
-						<p>Eastern Standard was one of the first places in Boston that did upscale mixed drinks.  The food is also pretty great here, though it can be loud.  The Hawthorne is really just a cocktail lounge with small bites, but as long as there isn't a game, it's pretty quiet.
-						<H4>Island Creek Oyster Bar</H4>
-						<p>Another great seafood place in Boston, probably the hardest one to get reservations for.</p>
-						<h4>Popeye's</h4>
-						<p>Shout out here as it is the only one in Boston, and our fried chicken isn't that great.</p>
-
-						<h2>Further West in Boston</h2>
-						<h4>Museum of Fine Arts</h4>
-						<p>Probably the Best art museums for pre-modern American Art in the US (suck it Metropolitian!).  Come see your Copley's to your Sargent's here.  The rest of the Museum is pretty great too, it has a lot of interesting Egyptian and Japanese Art if that is your thing.</p>
-						<h4>The Squealing Pig</h4>
-						<p>A few blocks from MFA, great food at a good price, with a nice beer list.  I suggest eating here instead of at the MFA.  If for some reason you get in Thursday night, and don't mind being in a bar with college students, this place can be fun.</p>
-
-						<h2>Cambridge</h2>
-
+            <h2><a name="Cambridge">Cambridge</a></h2>
 						
 						<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit.</p>
 						<p>Donec nonummy magna quis risus. Quisque eleifend. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit.</p>
