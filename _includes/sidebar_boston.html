@@ -1,0 +1,42 @@
+
+<!-- Sidebar -->
+<div id="sidebar" class="4u">
+	<section>
+		<header>
+			<h2>Etiam malesuada</h2>
+		</header>
+		<div class="row">
+			<section class="6u">
+				<ul class="default">
+					<li><a href="#North_End">North End</a></li>
+					<li><a href="#FH_FD">Fanuiel Hall/Financial District</a></li>
+					<li><a href="#DohntahnCrossing">Downtown Crossing</a></li>
+					<li><a href="#Chinatown">Chinatown/Theater District/Leather District</a></li>
+					<li><a href="#BackBay">Back Bay/Copley</a></li>
+				</ul>
+			</section>
+			<section class="6u">
+				<ul class="default">
+					<li><a href="#SouthEnd">South End</a></li>
+					<li><a href="#Kenmore">Kenmore</a></li>
+					<li><a href="#">Integer congue euismod</a></li>
+					<li><a href="#">Venenatis vulputate</a></li>
+					<li><a href="#">Morbi ligula volutpat</a></li>
+				</ul>
+			</section>
+		</div>
+	</section>
+	<section>
+		<header>
+			<h2>Recent Blog Posts</h2>
+		</header>
+		<ul class="style">
+		{% for post in site.posts offset: 0 limit: 2 %}
+			<li>
+				<p class="posted">{{ post.date | date_to_string }}  |  (10 )  Comments</p>
+				<p><a href="{{ site.prefix }}{{ post.url }}">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</a></p>
+			</li>
+		{% endfor %}
+		</ul>
+	</section>
+</div>
