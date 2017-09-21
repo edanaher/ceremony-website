@@ -20,6 +20,7 @@ layout: default
             {% for place in site.places %}
               {% if place.area %}
                 <h2><a name="{{ place.link }}">{{ place.area }}</a></h2>
+                {{ place.content }}
               {% else %}
                 <h4>{% if place.link %}<a href="{{ place.link }}">{% endif %}
                     {{ place.place }}
