@@ -1,0 +1,5 @@
+---
+area: Portland
+link: portland
+---
+No, no the Oregon Portland, the original US Portland (in Maine).  This is a great day trip, or a good starting point if you are going to mid-coast Maine or Acadia & Bar Harbor.  It's an easy trip up from Boston, without a car, as the Amtrak Downeaster train starts at North Station (which sadly isn't connected directly to South Station, where the East Coast Corrider trains are).  There are many cute shops and lots of great pubs & restaurants in Portland.  And there is Lobster, because it is Maine.  If you take the train a bit further North, you will hit Freeport Maine, which is the home to LL Bean, a 24 hour LL Bean store, and lots of factory outlets for major US brands.  Because this is a day trip for us, we do not know hotels to stay at in Portland.  I am guessing Trip Advisor, or whatever travel website or book you have will be perfectly adaquate to find one though.

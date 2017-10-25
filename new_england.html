@@ -1,0 +1,39 @@
+---
+title: Linear
+layout: default
+---
+
+<!-- Main -->
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<{% include sidebar_ne.html %}>
+
+				<!-- Content -->
+				<div id="content" class="8u skel-cell-important">
+					<section>
+						<header>
+							<h2>Things to do in New England</h2>
+							<span class="byline">Side trips if you want to extend your trip to New England</span>
+						</header>
+						<p></p>
+            {% for place in site.ne_places %}
+              {% if place.area %}
+                <h2><a name="{{ place.link }}">{{ place.area }}</a></h2>
+                {{ place.content }}
+              {% else %}
+                <h4>{% if place.link %}<a href="{{ place.link }}">{% endif %}
+                    {{ place.place }}
+                    {% if place.link %}</a>{% endif %}
+                </h4>
+                {{ place.content }}
+              {% endif %}
+            {% endfor %}
+
+					</section>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!-- /Main -->
