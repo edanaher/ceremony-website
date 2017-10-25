@@ -3,14 +3,14 @@
 <div id="sidebar" class="4u">
 	<section>
 		<header>
-			<h2>Etiam malesuada</h2>
+			<h2>Places of Interest</h2>
 		</header>
 		<div class="row">
 			{% assign first_row_size = 4 %}
 			<section class="6u">
 				<ul class="default">
 					{% assign count = 0 %}
-					{% for area in site.places %}
+					{% for area in site.boston_places %}
 						{% if area.area %}
 						<li><a href="#{{area.link}}">{{ area.area }}</a></li>
 							{% assign count = count | plus: 1 %}
@@ -22,7 +22,7 @@
 			<section class="6u">
 				<ul class="default">
 					{% assign count = 0 %}
-					{% for area in site.places %}
+					{% for area in site.boston_places %}
 						{% if area.area %}
 							{% assign count = count | plus: 1 %}
 							{% if count <= first_row_size %} {% continue %} {% endif %}
