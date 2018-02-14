@@ -1,7 +1,7 @@
 ---
 place: Eastern Standard/The Hawthorne
+link: https://www.easternstandardboston.com/
 ---
-Eastern Standard was one of the first places in Boston that did upscale mixed
-drinks.  The food is also pretty great here, though it can be loud.  The
-Hawthorne is really just a cocktail lounge with small bites, but as long as
-there isn't a game, it's pretty quiet.
+Green Line to Kenmore. Eastern Standard was one of the first places in Boston that "did" upscale mixed
+drinks.  The food is also pretty great here.  Then one drawback is it can be loud (ask for a table outside if it is).  
+The Hawthorne is a really nice cocktail lounge with small bites. If there isn't a game, it's pretty quiet.

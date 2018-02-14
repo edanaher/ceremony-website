@@ -1,5 +1,6 @@
 ---
 place: Parish Cafe
+link: parishcafe.com/boylston/
 ---
 
-Great place for beer and reasonably priced sandwiches.  The sandwiches are updated pretty frequently, and are created by chef's from some of the more famous upscale restaurants in Boston.
+Green line to Arlington. Great place for beer and reasonably priced sandwiches.  The sandwiches are updated pretty frequently, and are created by chef's from some of the more famous/trendy/upscale restaurants in Boston.  Food is served till 1 am, if looking for a late bite.
