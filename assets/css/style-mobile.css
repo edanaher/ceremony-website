@@ -172,7 +172,7 @@
 	{
 		height: 10em;
 		padding: 0;
-		background-position: center center;
+		background-position: center top;
 		background-attachment: scroll;
 	}
 
@@ -251,8 +251,8 @@
 	#tweet
 	{
 		padding: 3em 0em 1em 0em;
-		background-position: center center;
-		background-attachment: scroll;
+ /* background-position: center center;
+		background-attachment: scroll; */
 	}
 
 	#tweet blockquote
@@ -260,4 +260,4 @@
 		margin: 0;
 		padding: 1em 1em;
 		font-size: 1.2em;
-	}		
+	}
