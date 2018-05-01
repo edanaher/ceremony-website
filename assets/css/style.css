@@ -780,10 +780,10 @@
 	#header
 	{
 		position: relative;
-		background: url(../images/niagra-falls-higher-side.jpg) no-repeat top center;
+		background: url(../images/niagra-falls-higher.jpg) no-repeat top center;
 		background-attachment: fixed;
 		background-size: cover;
-		text-align: left;
+		text-align: center;
 	}
 	
 		#header:before
