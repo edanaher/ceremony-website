@@ -6,7 +6,7 @@ This is the Jekyll source for the website for our ceremony.  Currently very much
 Development
 -----------
 
-Install [jekyll](https://jekyllrb.com/): `gem install jekyll` (or, if you're using nix, `nix-env -p jekyll`; that avoid all the standard gem and ruby versioning issues), and `jekyll serve` to run it on localhost:4000.
+Install [jekyll](https://jekyllrb.com/): `gem install jekyll` (or, if you're using nix, `nix-shell -p jekyll`; that avoid all the standard gem and ruby versioning issues), and `jekyll serve` to run it on localhost:4000.
 
 Production
 ----------
