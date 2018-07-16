@@ -1,0 +1,48 @@
+<!-- Sidebar -->
+<div id="sidebar" class="4u">
+	<section>
+		<header>
+			<h2>Destinations</h2>
+		</header>
+		<div class="row">
+			{% assign first_row_size = 4 %}
+			<section class="6u">
+				<ul class="default">
+					{% assign count = 0 %}
+					{% for area in site.ne_places %}
+						{% if area.area %}
+						<li><a href="#{{area.link}}">{{ area.area }}</a></li>
+							{% assign count = count | plus: 1 %}
+							{% if count >= first_row_size %} {% break %} {% endif %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+			<section class="6u">
+				<ul class="default">
+					{% assign count = 0 %}
+					{% for area in site.ne_places %}
+						{% if area.area %}
+							{% assign count = count | plus: 1 %}
+							{% if count <= first_row_size %} {% continue %} {% endif %}
+							<li><a href="#{{area.link}}">{{ area.area }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+		</div>
+	</section>
+	<section>
+		<header>
+			<h2>Recent Blog Posts</h2>
+		</header>
+		<ul class="style">
+		{% for post in site.posts offset: 0 limit: 2 %}
+			<li>
+				<p class="posted">{{ post.date | date_to_string }}  |  (10 )  Comments</p>
+				<p><a href="{{ site.prefix }}{{ post.url }}">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</a></p>
+			</li>
+		{% endfor %}
+		</ul>
+	</section>
+</div>
