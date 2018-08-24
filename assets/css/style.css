@@ -1040,3 +1040,7 @@
 			font-weight: 300;
 			color: rgba(255,255,255,.6);
 		}	
+
+p.big {
+  font-size: 120%;
+}
